@@ -8,15 +8,15 @@
     <!-- Создаем бин автомобиля Ауди-->
     <!--  Мы должны дать айди нашему бину и указать класс, который мы будем использовать для этого бина-->
     <!--  <bean id = "audi" class="spring.impl.car.Audi"/>    -->
-     <bean id = "knight" class="task_02.Knight"/>
+     <bean id = "knight" class="task_2.Knight"/>
     <!--Эту запись открываем для тестирования audi2-->
     <!--<bean id = "audi2" class="spring.impl.car.Audi"/>   -->
 
 
     <!--Создаем бины для систем, которые будут затем взяты из контейнера-->
-      <bean id="stand" class="task_02.quest.StandQ"/>
-      <bean id="runway" class="task_02.quest.RunAwayQ"/> <!-- -->
-      <bean id="jump" class="task_02.quest.JumpQ"/> <!-- -->
+      <bean id="stand" class="task_2.status.Stand"/>
+      <bean id="runway" class="task_2.status.Running"/> <!-- -->
+      <bean id="jump" class="task_2.status.Jumps"/> <!-- -->
 
     <!-- <bean id="sony" class="spring.impl.audio.Sony"/>  -->
 
@@ -25,7 +25,7 @@
     <!--   <bean id="garmin" class="spring.impl.navigation.Garmin"/>  -->
 
     <!--Это пример записи зависимости прямо в контейнере-->
-    <bean id = "knight_2" class="task_02.Knight">
+    <bean id = "knight_2" class="task_2.Knight">
         <property name = "setQuest" ref = "runway"/>
     </bean>
 
@@ -43,7 +43,7 @@
      </bean> -->
 
     <!-- Внедрение зависимостей с помощью конструктора -->
-    <bean id = "knight_3" class="task_02.Knight" scope="prototype">
+    <bean id = "knight_3" class="task_2.Knight" scope="prototype">
         <constructor-arg ref="jump"/>
     </bean>
 

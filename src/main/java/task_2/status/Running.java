@@ -1,11 +1,11 @@
-package task_2.quest;
+package task_2.status;
 
 
 import task_2.Quest;
 
 public class Running implements Quest {
     public void myQuest() {
-            System.out.println("Knight біжить myQuest()\t " + Running.class.getName());
+            System.out.println("Knight біжить \t " + Running.class.getName());
 
     }
 

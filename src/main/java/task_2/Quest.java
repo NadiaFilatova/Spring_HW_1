@@ -1,3 +1,7 @@
 package task_2;
 
-public interface Quest {
+public interface Quest {void myQuest();
+
+}
+
+

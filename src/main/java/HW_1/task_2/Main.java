@@ -1,12 +1,11 @@
-package task_2;
+package HW_1.task_2;
 
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import task_2.status.Jumps;
-import task_2.status.Running;
-import task_2.status.Stand;
+import HW_1.task_2.status.Jumps;
+import HW_1.task_2.status.Running;
+import HW_1.task_2.status.Stand;
 
 /*
 Задание 2

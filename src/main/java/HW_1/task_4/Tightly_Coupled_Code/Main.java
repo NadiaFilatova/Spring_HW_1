@@ -1,4 +1,4 @@
-package task_4.Tightly_Coupled_Code;
+package HW_1.task_4.Tightly_Coupled_Code;
 //У цьому прикладі створюється об'єкт Address, передається як параметр при створенні об'єкта User,
 // а потім викликається метод displayInfo(), щоб вивести інформацію про користувача на екран.
 public class Main {

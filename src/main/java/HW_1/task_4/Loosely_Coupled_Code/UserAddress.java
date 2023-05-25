@@ -1,4 +1,4 @@
-package task_4.Loosely_Coupled_Code;
+package HW_1.task_4.Loosely_Coupled_Code;
 //Клас UserAddress реалізує інтерфейс Address і надає конкретну реалізацію методу getFullAddress().
 public class UserAddress implements Address {
     private final String street;

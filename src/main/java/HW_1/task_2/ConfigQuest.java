@@ -1,10 +1,10 @@
-package task_2;
+package HW_1.task_2;
 
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import task_2.status.Running;
+import HW_1.task_2.status.Running;
 
 @Configuration
 public class ConfigQuest {

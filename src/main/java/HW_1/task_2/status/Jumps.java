@@ -1,7 +1,7 @@
-package task_2.status;
+package HW_1.task_2.status;
 
 
-import task_2.Quest;
+import HW_1.task_2.Quest;
 
 public class Jumps implements Quest {
     public void myQuest() {

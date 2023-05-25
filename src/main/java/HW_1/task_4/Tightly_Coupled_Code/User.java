@@ -1,4 +1,4 @@
-package task_4.Tightly_Coupled_Code;
+package HW_1.task_4.Tightly_Coupled_Code;
 
 // Клас User і клас Address сильно зв'язані, оскільки клас User має посилання на об'єкт Address,
 // і може отримувати доступ до його полів та методів.

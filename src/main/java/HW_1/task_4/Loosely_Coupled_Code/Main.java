@@ -1,4 +1,4 @@
-package task_4.Loosely_Coupled_Code;
+package HW_1.task_4.Loosely_Coupled_Code;
 //У цьому прикладі об'єкт UserAddress створюється як реалізація Address і передається як параметр при створенні об'єкта User.
 // Використання інтерфейсу Address дозволяє замінити реалізацію адреси без необхідності змінювати клас User
 public class Main {

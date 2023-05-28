@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Configuration;
 
 //У цьому прикладі анотації @Configurationпоказано, що клас AppConfigє конфігураційним класом Spring.
 // Метод chemistryBean()використовує анотацію @Beanдля визначення біна з назвою chemistryBean.
-// Метод інстанціює об'єкт Chemistry, встановлює значення "Element Name"через конструктор та значення 42 з
-// а допомогою методу налаштування setAtomicNumber().
+// Метод інстанціює об'єкт Chemistry, встановлює значення "calcium_oxide"через конструктор та значення 56 з
+// а допомогою методу налаштування setMolarMass().
 // Метод initMethod = "init"вказує, що метод init()класу Chemistry буде викликаний після створення об'єкта.
 @Configuration
 public class AppConfig {

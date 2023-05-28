@@ -1,10 +1,12 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://www.springframework.org/schema/beans"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--  По умолчанию все закомментированно для работы через java - конфигурацию  -->
 
+                                           <!-- hw-1 -->
     <!-- Создаем бин автомобиля Ауди-->
     <!--  Мы должны дать айди нашему бину и указать класс, который мы будем использовать для этого бина-->
     <!--  <bean id = "audi" class="spring.impl.car.Audi"/>    -->
@@ -46,5 +48,20 @@
     <bean id = "knight_3" class="HW_1.task_2.Knight" scope="prototype">
         <constructor-arg ref="jump"/>
     </bean>
+                                <!-- hw-2 -->
+    <context:annotation-config/>
 
+    <bean id="calcium_oxide" class="HW_2.Task_2_3_4.Chemistry" init-method="init">
+        <constructor-arg value="CaO"/>
+        <property name="molarMass" value="56"/>
+    </bean>
+
+    <bean id="name1" class="HW_2.Task_2_3_4.Chemistry" init-method="init">
+        <constructor-arg value="Element Name2"/>
+        <property name="molarMass" value="15"/>
+    </bean>
+    <util:map id="ChemistryMap" scope="singleton" map-class="java.util.HashMap">
+        <entry key="1" value-ref="calcium_oxide"/>
+        <entry key="2" value-ref="name1"/>
+    </util:map>
 </beans>

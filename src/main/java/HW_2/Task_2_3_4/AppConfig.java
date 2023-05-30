@@ -11,14 +11,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Bean
+    @Bean (name = "calcium_oxide")
     public Chemistry calcium_oxide() {
         Chemistry chemistry = new Chemistry("CaO");
         chemistry.setMolarMass(56);
         return chemistry;
     }
 
-    @Bean
+    @Bean (name ="name1" )
     public Chemistry name1() {
         Chemistry chemistry = new Chemistry("Element Name2");
         chemistry.setMolarMass(15);
